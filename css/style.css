@@ -1,0 +1,80 @@
+body {
+  background: linear-gradient(45deg, #f5f7fa, #c3cfe2);
+  background-attachment: fixed;
+}
+
+.promo {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.promo__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.promo__container {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.promo__title {
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.promo__subtitle {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.77);
+  letter-spacing: 1px;
+  margin-bottom: 60px;
+}
+
+.promo__btn {
+  display: inline-block;
+  padding: 11px 22px;
+  background-color: #85b05f;
+  color: #fff;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  transition: background-color 0.2s ease;
+}
+
+.promo__btn:hover {
+  background-color: rgb(116, 159, 79);
+}
+
+.promo__mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #1a2238;
+  opacity: 0.8;
+  z-index: 2;
+}
+
+.promo__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  object-fit: cover;
+}
